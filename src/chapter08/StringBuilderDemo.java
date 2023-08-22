@@ -4,7 +4,7 @@ public class StringBuilderDemo {
   public static void main(String[] args) {
     String s = new String("hi");
     System.out.println(s.hashCode());
-    s = s + "!";
+    s = s + "!!";
     System.out.println(s.hashCode());
 
     StringBuilder sb = new StringBuilder("Hello World");
@@ -21,5 +21,4 @@ public class StringBuilderDemo {
     sb = sb.reverse();
     System.out.println("역전 = " + sb);
   }
-
 }
