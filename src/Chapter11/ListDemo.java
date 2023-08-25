@@ -25,12 +25,9 @@ public class ListDemo {
     }
     System.out.println();
     list.set(1, "바다표범");
-    list.sort(new Comparator<String>() {
-      @Override
-      public int compare(String o1, String o2) {
-        return o1.length() - o2.length();
-      }
-    });
+
+    list.sort((s1, s2) -> s1.length() - s2.length());
+    list.forEach(s -> {System.out.println(s);});
     System.out.println(list);
   }
 

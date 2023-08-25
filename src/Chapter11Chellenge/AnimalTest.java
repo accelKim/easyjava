@@ -13,7 +13,8 @@ public class AnimalTest {
 
     for (String animals: animal) {
       if (animals.length() == 2) {
-        System.out.println(animals);
+        System.out.println(animals
+        );
       }
     }
 
